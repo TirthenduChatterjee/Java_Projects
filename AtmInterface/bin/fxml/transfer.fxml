@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="718.0" styleClass="root" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller3">
+<left>
+      <AnchorPane prefHeight="484.0" prefWidth="380.0" style="-fx-background-color: #11235A;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#596fb7" layoutX="193.0" layoutY="175.0" radius="110.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" />
+            <Label contentDisplay="CENTER" layoutX="114.0" layoutY="129.0" prefHeight="92.0" prefWidth="170.0" text="TCTS" textAlignment="CENTER" textFill="#f6eca9">
+               <font>
+                  <Font name="Impact" size="75.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="119.0" layoutY="213.0" prefHeight="37.0" prefWidth="148.0" text="Most Trusted Bank Ever Built" textFill="#c6cf9b">
+               <font>
+                  <Font name="Calibri Bold Italic" size="12.179104804992676" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="419.0" text="© 2022 TCTS All Rights Reserved" textFill="#f6eca9">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+   </right>
+   <right>
+      <AnchorPane prefHeight="484.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="50.0" layoutY="55.0" text="AMOUNT TRANSFER" textFill="#11235a">
+               <font>
+                  <Font name="Impact" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="130.0" prefHeight="29.0" prefWidth="105.0" text="USERNAME :" textFill="#11235a">
+               <font>
+                  <Font name="Impact" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="236.0" prefHeight="29.0" prefWidth="140.0" text="AMOUNT: " textFill="#11235a">
+               <font>
+                  <Font name="Impact" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="transferamount" alignment="CENTER" layoutX="129.0" layoutY="233.0" prefHeight="34.0" prefWidth="179.0" promptText="ENTER AMOUNT" style="-fx-border-color: #11235A;" />
+            <TextField fx:id="recipient" alignment="CENTER" layoutX="130.0" layoutY="127.0" prefHeight="34.0" prefWidth="178.0" promptText="ENTER USERNAME" style="-fx-border-color: #11235A;" />
+            <Button fx:id="transfer" layoutX="102.0" layoutY="292.0" mnemonicParsing="false" onAction="#onClickTransfer" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #11235A;" text="TRANSFER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel" layoutX="102.0" layoutY="354.0" mnemonicParsing="false" onAction="#onClickCancel" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #C4DFDF;" text="CANCEL" textFill="#11235a">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="warning" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="96.0" prefHeight="17.0" prefWidth="306.0" textFill="#f01414">
+               <font>
+                  <Font name="System Bold" size="12.179104804992676" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="252.0" layoutY="431.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #C4DFDF;" text="BACK" textFill="#11235a">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="8.0" layoutY="179.0" prefHeight="29.0" prefWidth="112.0" text="ACCOUNT ID :" textFill="#11235a">
+               <font>
+                  <Font name="Impact" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Id" alignment="CENTER" layoutX="130.0" layoutY="176.0" prefHeight="34.0" prefWidth="178.0" promptText="ENTER ACCOUNT ID" style="-fx-border-color: #11235A;" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

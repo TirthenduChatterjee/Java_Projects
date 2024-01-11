@@ -1,0 +1,26 @@
+.root{
+    -fx-background-color:#11235A;
+    background-color: #11235A;
+}
+.label{
+    -fx-text-fill:white;
+}
+.table-column{
+    -fx-border-width: 0.5 0.3 0.5 0.3; 
+    border-width: 0.5 0.3 0.5 0.3;
+    -fx-border-color: #11235A;
+    border-color: #11235A;
+    -fx-alignment:CENTER;
+    -fx-font-weight:700;
+    font-weight:700;
+    -fx-font-size:14;
+    font-size: 14;
+}
+.column-header{
+    -fx-background-color:#11235A;
+    background-color: #11235A;
+    -fx-font-size:15;
+    font-size: 15;
+    -fx-font-weight:bold;
+    font-weight:bold;
+}

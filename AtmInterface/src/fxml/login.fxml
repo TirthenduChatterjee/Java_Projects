@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<!-- <stylesheets>
+<URL value ="@css/login.css"/>
+</stylesheets> -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="718.0" styleClass="root" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   
+   <left>
+      <AnchorPane prefHeight="484.0" prefWidth="380.0" style="-fx-background-color: #11235A;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#596fb7" layoutX="193.0" layoutY="175.0" radius="110.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" />
+            <Label contentDisplay="CENTER" layoutX="114.0" layoutY="129.0" prefHeight="92.0" prefWidth="170.0" text="TCTS" textAlignment="CENTER" textFill="#f6eca9">
+               <font>
+                  <Font name="Impact" size="75.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="119.0" layoutY="213.0" prefHeight="37.0" prefWidth="148.0" text="Most Trusted Bank Ever Built" textFill="#c6cf9b">
+               <font>
+                  <Font name="Calibri Bold Italic" size="12.179104804992676" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="419.0" text="© 2022 TCTS All Rights Reserved" textFill="#f6eca9">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="484.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label graphicTextGap="10.0" layoutX="95.0" layoutY="67.0" styleClass="headtext" text="SECURE LOGIN" textFill="#11235a">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="5.0" layoutX="20.0" layoutY="145.0" text="USER NAME : " textFill="#11235a">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="5.0" layoutX="22.0" layoutY="244.0" text="PASSWORD : " textFill="#11235a">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField layoutX="154.0" layoutY="143.0" />
+            <TextField fx:id="Name" alignment="CENTER" layoutX="147.0" layoutY="138.0" prefHeight="32.0" prefWidth="160.0" promptText="ENTER NAME" style="-fx-border-color: #11235A; -fx-font-size: 14; -fx-border-width: 1px; -fx-border-radius: 3px;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="Password" alignment="CENTER" layoutX="148.0" layoutY="240.0" prefHeight="33.0" prefWidth="158.0" promptText="ENTER PASSWORD" style="-fx-border-color: #11235A; -fx-border-radius: 3px;">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <Button fx:id="LOGIN" alignment="CENTER" layoutX="45.0" layoutY="295.0" mnemonicParsing="false" onAction="#OnPressLogin" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #11235A;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel" alignment="CENTER" layoutX="45.0" layoutY="364.0" mnemonicParsing="false" onAction="#onClickCancel" prefHeight="39.0" prefWidth="236.0" style="-fx-background-color: #C4DFDF;" text="CANCEL">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="69.0" layoutY="136.0" opacity="0.37" stroke="BLACK" strokeWidth="5.0" visible="false" width="200.0" />
+            <Line endX="173.46270751953125" endY="-7.62939453125E-6" layoutX="154.0" layoutY="58.0" startX="-142.47760009765625" startY="-7.62939453125E-6" strokeWidth="3.0" />
+            <Line endX="-147.97760009765625" endY="355.514892578125" layoutX="158.0" layoutY="75.0" startX="-147.97760009765625" startY="-15.500007629394531" strokeWidth="3.0" />
+            <Line endX="-143.19403076171875" endY="353.014892578125" layoutX="154.0" layoutY="79.0" startX="173.44769287109375" startY="353.014892578125" strokeWidth="3.0" />
+            <Line endX="168.96270751953125" endY="-10.500007629394531" layoutX="159.0" layoutY="68.0" startX="169.94769287109375" startY="362.514892578125" strokeWidth="3.0" />
+            <Label fx:id="warning" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="100.0" prefHeight="16.0" prefWidth="256.0" textFill="#f01010">
+               <font>
+                  <Font name="System Bold" size="12.179104804992676" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="194.0" prefHeight="27.0" prefWidth="127.0" text="ACCOUNT ID :" textFill="#11235a">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Id" alignment="CENTER" layoutX="147.0" layoutY="191.0" prefHeight="32.0" prefWidth="160.0" promptText="ENTER ID" style="-fx-border-color: #11235A; -fx-border-width: 1px; -fx-border-radius: 3px;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
